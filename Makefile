@@ -2,6 +2,7 @@ CC:=g++
 LINK_FLAG:=-Wall -pthread
 COMPILER_FLAG:=-c -fpic
 DEPENDANT_FILE:=main.o lib32.o lib64.o
+NAME=hoang trung kien
 
 main.exe: $(DEPENDANT_FILE)
 	$(CC) $(LINK_FLAG) $? -o $@
@@ -19,3 +20,6 @@ clean:
 
 run:
 	./main.exe
+
+test:
+	echo hoang trung kien
