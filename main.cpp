@@ -1,17 +1,13 @@
 #include<iostream>
+#include"newLib.h"
+#include"libInclude.h"
 using namespace std;
-#include "libInclude.h"
-#include "newLib.h"
 int main()
 {
-    cout<<"main fun"<<KIEN_NAME<<endl;
-    #ifdef RUN_GET
-    get();
-    #endif
-    #ifdef RUN_SET
+    cout<<"main fun"<<endl;
     set();
-    #endif
+    get();
     test();
-    
+    cout<<KIEN_NAME<<endl;
     return 0;
 }
